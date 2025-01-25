@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motive Venture Hub Technologies</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js" defer></script>
+    <link rel="preload" href="your-video.mp4" as="video">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Motive Venture Hub Technologies</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="smooth-scroll">Home</a></li>
+                    <li><a href="#about" class="smooth-scroll">About Us</a></li>
+                    <li><a href="#services" class="smooth-scroll">Services</a></li>
+                    <li><a href="#solutions" class="smooth-scroll">Solutions</a></li>
+                    <li><a href="#blog" class="smooth-scroll">Blog</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video autoplay muted loop id="backgroundVideo" preload="none" loading="lazy">
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h2>Innovating the Future, One Venture at a Time</h2>
+            <a href="#services" class="cta-button smooth-scroll">Discover Our Solutions</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to Motive Venture Hub Technologies. Our mission is to drive innovation through technology. Our vision is to empower businesses and individuals with cutting-edge solutions. Our core values are excellence, integrity, and collaboration.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Software Development</h3>
+                    <p>Custom software solutions tailored to your needs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>IT Consulting</h3>
+                    <p>Expert advice to enhance your IT infrastructure.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Digital Transformation</h3>
+                    <p>Transform your business with the latest technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section with Slider -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="slide active">
+                    <blockquote>
+                        <p>"Motive Venture Hub Technologies has been a game changer for our business. Their solutions are top-notch!"</p>
+                        <footer>- Teranet</footer>
+                    </blockquote>
+                </div>
+                <div class="slide">
+                    <blockquote>
+                        <p>"Their digital transformation services were exactly what we needed to scale."</p>
+                        <footer>- Epsilon Solutions</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Latest Insights</h2>
+            <p>Read our latest articles and stay updated on industry trends and company news.</p>
+        </div>
+    </section>
+
+    <!-- Contact Us Section with Modal and Google Maps -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <button id="contactButton" class="cta-button">Get in Touch</button>
+            <div id="contactModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form id="contactForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div id="map" style="width:100%;height:400px;"></div>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+            </script>
+            <div class="contact-info">
+                <p>Address: Mississauga, Ontario</p>
+                <p>Email: mvhtechnologies01@gmail.com</p>
+                <p>Phone: +1(514) 574-9025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#home" class="smooth-scroll">Home</a></li>
+                <li><a href="#about" class="smooth-scroll">About Us</a></li>
+                <li><a href="#services" class="smooth-scroll">Services</a></li>
+                <li><a href="#solutions" class="smooth-scroll">Solutions</a></li>
+                <li><a href="#blog" class="smooth-scroll">Blog</a></li>
+                <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <p>&copy; 2024 Motive Venture Hub Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-top" title="Go to top">&#8593;</button>
+</body>
+</html>

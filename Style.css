@@ -1,0 +1,246 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Light background for better contrast */
+    color: #333; /* Dark text for readability */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #333; /* Dark gray for headings */
+}
+
+/* Sticky Navbar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #343A40; /* Dark gray navbar */
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white; /* White text for navbar links */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background-color: #FF6F61; /* Accent color for hover */
+    color: white; /* Ensure the text remains white on hover */
+}
+
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Logo Highlight Styles */
+.logo h1 {
+    font-size: 3rem; /* Larger font size for prominence */
+    color: #007BFF; /* Blue color for the text */
+    text-transform: uppercase; /* Make text uppercase for more impact */
+    letter-spacing: 2px; /* Space out letters for emphasis */
+    font-weight: bold; /* Make the text bold */
+    position: relative;
+}
+
+/* Gradient Text Effect */
+.logo h1 {
+    background: linear-gradient(90deg, #007BFF, #FF6F61); /* Gradient from blue to coral */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    color: transparent; /* Make the text color transparent */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a glowing effect */
+}
+
+/* Animated Underline Effect */
+.logo h1::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #FF6F61; /* Coral color for the underline */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.logo h1:hover::after {
+    width: 100%; /* Expand the underline on hover */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+}
+
+#backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3rem; /* Increase font size for readability */
+    font-weight: 700;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    background-color: #FF6F61; /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FF4D39; /* Slightly darker shade on hover */
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    animation: slideIn 0.5s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+    background-color: #ffffff; /* White background for sections */
+}
+
+.service-cards {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.service-card {
+    min-width: 300px;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+    color: #343A40; /* Dark gray heading for service cards */
+    font-size: 1.5rem;
+}
+
+.service-card p {
+    color: #555; /* Lighter gray for description text */
+}
+
+/* Footer */
+footer {
+    padding: 30px 0;
+    background-color: #343A40; /* Dark footer */
+    color: white;
+}
+
+footer a {
+    color: #FF6F61; /* Accent color for links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FF4D39; /* Darken the link color on hover */
+}
+
+footer .social-media a {
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+
+footer .social-media a:hover {
+    color: #007BFF; /* Blue color on social media icon hover */
+}
+
+/* Scroll to Top Button */
+.scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF6F61; /* Same accent color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-top:hover {
+    background-color: #FF4D39; /* Darker hover state */
+}
